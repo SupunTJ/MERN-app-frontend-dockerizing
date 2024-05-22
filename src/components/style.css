@@ -1,0 +1,65 @@
+.form_container {
+  width: 30%;
+  background-image: linear-gradient(to right, rgb(127, 168, 168), rgb(16, 70, 63) );
+  
+}
+
+
+.playlistform{
+  width: 30%;
+  background-image: linear-gradient(to right, rgb(184, 202, 202), rgb(20, 125, 111) );
+}
+
+.crud{
+  width: 50%;
+  background-image: linear-gradient(to right, rgb(184, 202, 202), rgb(20, 125, 111) );
+}
+
+.test{
+  width: 50%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .form_container {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form_container {
+    width: 65%;
+  }
+}
+
+
+audio::-webkit-media-controls-panel{
+  background-color: rgb(99, 173, 167);
+}
+audio::-webkit-media-controls-play-button{
+  background-color: rgb(23, 206, 93);
+  border-radius: 50%;
+}
+audio::-webkit-media-controls-current-time-display{
+  color: #080808;
+}
+audio::-webkit-media-controls-time-remaining-display{
+  color: #333;
+  padding: 5px;
+}
+audio::-webkit-media-controls-timeline{
+  border-radius: 40px;
+  background-color: lightblue;
+  padding: 10px;
+}
+audio::-webkit-media-controls-volume-slider{
+  background-color: lightblue;
+  border-radius: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+audio::-webkit-media-controls-mute-button{
+  background-color: lightblue;
+  border-radius: 50%;
+}
+
