@@ -21,10 +21,10 @@ pipeline {
             steps {
                 script {
                     // Stop and remove any existing container with the same name
-                    sh 'docker stop supun3998-frontend-app-image-container || true'
-                    sh 'docker rm supun3998-frontend-app-image-container || true'
+                    sh 'docker stop supun3998-frontend-app-image || true'
+                    sh 'docker rm supun3998-frontend-app-image || true'
                     // Run the new container
-                    sh 'docker run -d -p 3001:3000 --name supun3998-frontend-app-image-container supun3998/frontend-app-image'
+                    sh 'docker run -d -p 3001:3000 --name supun3998-frontend-app-image supun3998/frontend-app-image'
                 }
             }
         }
