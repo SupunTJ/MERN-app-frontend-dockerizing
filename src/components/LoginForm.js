@@ -71,7 +71,7 @@ export default function LoginForm() {
       >
         <div className="form_container p-5 rounded bg-white">
           <img className="App-logo mb-4" src={logo} alt="logo" />
-          <h3 className="text-center mb-4">Login Form</h3>
+          <h3 className="text-center mb-4">Login</h3>
           <form onSubmit={handleLogin}>
             <div className="mb-2">
               <input
