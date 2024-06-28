@@ -71,7 +71,7 @@ export default function LoginForm() {
       >
         <div className="form_container p-5 rounded bg-white">
           <img className="App-logo mb-4" src={logo} alt="logo" />
-          <h3 className="text-center mb-4">Login</h3>
+          <h3 className="text-center mb-4">Login Form</h3>
           <form onSubmit={handleLogin}>
             <div className="mb-2">
               <input
@@ -83,7 +83,7 @@ export default function LoginForm() {
                 name="email"
               />
             </div>
-            <p style={{color : '#ff0000'}}>{formErrors.email}</p>
+            <p style={{ color: "#ff0000" }}>{formErrors.email}</p>
             <div className="mb-2">
               <input
                 className="form-control"
@@ -94,8 +94,8 @@ export default function LoginForm() {
                 name="password"
               />
             </div>
-            <p style={{color : '#ff0000'}}>{formErrors.password}</p>
-            <p style={{color : '#ff0000'}}>{loginError}</p>
+            <p style={{ color: "#ff0000" }}>{formErrors.password}</p>
+            <p style={{ color: "#ff0000" }}>{loginError}</p>
             <div className="d-grid">
               <button className="btn btn-primary mb-4" type="submit">
                 Login
