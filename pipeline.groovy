@@ -17,18 +17,19 @@ pipeline {
             }
         }
 
-      
         stage('Run Docker Container') {
             steps {
                 script {
-                    // Stop any running containers with the same name
-                    sh 'docker stop server-frontend || true'
-                    sh 'docker rm server-frontend || true'
+                    // Stop and remove any existing container with the same name
+                    sh 'docker stop supun3998-frontend-app-image-container || true'
+                    sh 'docker rm supun3998-frontend-app-image-container || true'
                     // Run the new container
-                    sh 'docker run -d -p 3001:3000 --name frontend-container supun3998/frontend-app-image'
+                    sh 'docker run -d -p 3001:3000 --name supun3998-frontend-app-image-container supun3998/frontend-app-image'
                 }
             }
         }
+
+      
         stage('Show Running Containers') {
             steps {
                 sh 'docker ps'
